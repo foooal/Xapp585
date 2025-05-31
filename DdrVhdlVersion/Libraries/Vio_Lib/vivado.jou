@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2139404 on Wed Feb 21 18:47:47 MST 2018
+# IP Build 2136750 on Wed Feb 21 20:48:04 MST 2018
+# Start of session at: Tue Mar 20 16:27:25 2018
+# Process ID: 6020
+# Current directory: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib
+# Command line: vivado.exe
+# Log file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/vivado.log
+# Journal file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/managed_ip_project/managed_ip_project.xpr
+set_property -dict [list CONFIG.C_PROBE_IN18_WIDTH {7} CONFIG.C_PROBE_IN17_WIDTH {7} CONFIG.C_NUM_PROBE_IN {19}] [get_ips Ctrl_Vio]
+generate_target all [get_files  C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/Ctrl_Vio/Ctrl_Vio.xci]
+catch { config_ip_cache -export [get_ips -all Ctrl_Vio] }
+export_ip_user_files -of_objects [get_files C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/Ctrl_Vio/Ctrl_Vio.xci] -no_script -sync -force -quiet
+reset_run Ctrl_Vio_synth_1
+launch_runs -jobs 4 Ctrl_Vio_synth_1
+wait_on_run Ctrl_Vio_synth_1
+export_simulation -of_objects [get_files C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/Ctrl_Vio/Ctrl_Vio.xci] -directory C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/ip_user_files/sim_scripts -ip_user_files_dir C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/ip_user_files -ipstatic_source_dir C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=C:/CaeTools/SimLibraries} {riviera=C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera} {activehdl=C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/managed_ip_project/managed_ip_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

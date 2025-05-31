@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2139404 on Wed Feb 21 18:47:47 MST 2018
+# IP Build 2136750 on Wed Feb 21 20:48:04 MST 2018
+# Start of session at: Fri Mar  2 13:25:15 2018
+# Process ID: 852
+# Current directory: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Vivado/Xapp585Vhdl/Xapp585Vhdl.runs/synth_1
+# Command line: vivado.exe -log top5x2_7to1_ddr_rx.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top5x2_7to1_ddr_rx.tcl
+# Log file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Vivado/Xapp585Vhdl/Xapp585Vhdl.runs/synth_1/top5x2_7to1_ddr_rx.vds
+# Journal file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Vivado/Xapp585Vhdl/Xapp585Vhdl.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top5x2_7to1_ddr_rx.tcl -notrace

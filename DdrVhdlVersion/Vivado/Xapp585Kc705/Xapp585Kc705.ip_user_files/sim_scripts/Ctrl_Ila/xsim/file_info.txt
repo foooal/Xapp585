@@ -1,0 +1,2 @@
+Ctrl_Ila.vhd,vhdl,xil_defaultlib,../../../../../../Libraries/Ila_Lib/Ctrl_Ila/sim/Ctrl_Ila.vhd,incdir="../../../../../../Libraries/Ila_Lib/Ctrl_Ila/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

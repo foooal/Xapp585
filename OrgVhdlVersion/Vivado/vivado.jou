@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2139404 on Wed Feb 21 18:47:47 MST 2018
+# IP Build 2136750 on Wed Feb 21 20:48:04 MST 2018
+# Start of session at: Fri Mar  2 09:08:37 2018
+# Process ID: 11584
+# Current directory: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Vivado
+# Command line: vivado.exe
+# Log file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Vivado/vivado.log
+# Journal file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project Xapp585Vhdl C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Vivado/Xapp585Vhdl -part xc7k325tffg900-2
+add_files -norecurse C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Vhdl/top5x2_7to1_ddr_rx.vhd
+set_property compxlib.questa_compiled_library_dir C:/CaeTools/SimLibraries [current_project]
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Libraries/n_x_serdes_1_to_7_mmcm_idelay_ddr.vhd
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Libraries/serdes_1_to_7_slave_idelay_ddr.vhd C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Libraries/n_x_serdes_1_to_7_mmcm_idelay_ddr.vhd}
+update_compile_order -fileset sources_1
+add_files -norecurse {C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Libraries/delay_controller_wrap.vhd C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Libraries/gearbox_4_to_7_slave.vhd}
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Constraints/top5x2_7to1_ddr_rx.xdc
+set_property target_constrs_file C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Constraints/top5x2_7to1_ddr_rx.xdc [current_fileset -constrset]
+synth_design -rtl -name rtl_1
+set_property target_language VHDL [current_project]
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+add_files -norecurse C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Libraries/serdes_1_to_7_mmcm_idelay_ddr.vhd
+update_compile_order -fileset sources_1
+close_design
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+add_files -norecurse C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/VhdlVersion/Libraries/gearbox_4_to_7.vhd
+update_compile_order -fileset sources_1
+close_design
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_design
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2139404 on Wed Feb 21 18:47:47 MST 2018
+# IP Build 2136750 on Wed Feb 21 20:48:04 MST 2018
+# Start of session at: Tue Mar 20 16:29:02 2018
+# Process ID: 6300
+# Current directory: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/managed_ip_project/managed_ip_project.runs/Ctrl_Vio_synth_1
+# Command line: vivado.exe -log Ctrl_Vio.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Ctrl_Vio.tcl
+# Log file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/managed_ip_project/managed_ip_project.runs/Ctrl_Vio_synth_1/Ctrl_Vio.vds
+# Journal file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Vio_Lib/managed_ip_project/managed_ip_project.runs/Ctrl_Vio_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Ctrl_Vio.tcl -notrace

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../Ctrl_Vio/sim/Ctrl_Vio.vhd" \
+
+nosort

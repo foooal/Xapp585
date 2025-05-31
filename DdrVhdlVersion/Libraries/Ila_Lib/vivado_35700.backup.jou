@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2139404 on Wed Feb 21 18:47:47 MST 2018
+# IP Build 2136750 on Wed Feb 21 20:48:04 MST 2018
+# Start of session at: Tue Mar 13 13:10:54 2018
+# Process ID: 35700
+# Current directory: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib
+# Command line: vivado.exe
+# Log file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/vivado.log
+# Journal file: C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/managed_ip_project/managed_ip_project.xpr
+reset_target all [get_files  C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/Ctrl_Ila/Ctrl_Ila.xci]
+export_ip_user_files -of_objects  [get_files  C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/Ctrl_Ila/Ctrl_Ila.xci] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/Ctrl_Ila/Ctrl_Ila.xci]
+catch { config_ip_cache -export [get_ips -all Ctrl_Ila] }
+export_ip_user_files -of_objects [get_files C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/Ctrl_Ila/Ctrl_Ila.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/Ctrl_Ila/Ctrl_Ila.xci]
+launch_runs -jobs 4 Ctrl_Ila_synth_1
+wait_on_run Ctrl_Ila_synth_1
+export_simulation -of_objects [get_files C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/Ctrl_Ila/Ctrl_Ila.xci] -directory C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/ip_user_files/sim_scripts -ip_user_files_dir C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/ip_user_files -ipstatic_source_dir C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=C:/CaeTools/SimLibraries} {riviera=C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera} {activehdl=C:/Projects/A_Series_7/LvdsSourceSync/Xapp585/DdrVhdlVersion/Libraries/Ila_Lib/managed_ip_project/managed_ip_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

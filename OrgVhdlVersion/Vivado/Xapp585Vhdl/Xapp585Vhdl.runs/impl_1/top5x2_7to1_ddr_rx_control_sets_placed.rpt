@@ -1,0 +1,140 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2139404 Wed Feb 21 18:47:47 MST 2018
+| Date         : Fri Mar  2 13:26:59 2018
+| Host         : XBEDEFOSSEZ31 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top5x2_7to1_ddr_rx_control_sets_placed.rpt
+| Design       : top5x2_7to1_ddr_rx
+| Device       : xc7k325t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    73 |
+| Unused register locations in slices containing registers |   212 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             436 |          106 |
+| No           | No                    | Yes                    |               1 |            1 |
+| No           | Yes                   | No                     |             150 |           54 |
+| Yes          | No                    | No                     |             179 |           68 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             254 |           82 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+-----------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|    Clock Signal    |                             Enable Signal                             |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++--------------------+-----------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  rx0/rx0/rxclk_d4  |                                                                       | rx0/rx0/local_reset_dom_ch_reg                                |                1 |              1 |
+|  rx0/rx0/pixel_clk |                                                                       | rx0/rx0/dummy_reg                                             |                1 |              1 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[0].dc_inst/s_state[3]_i_1_n_0                           | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              4 |
+|  rx0/rx0/rxclk_d4  |                                                                       | rx0/rx0/gb0/write_addr[3]_i_1_n_0                             |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[2].dc_inst/s_state[3]_i_1__6_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[1].dc_inst/m_delay_val_int[4]_i_1__0_n_0                |                                                               |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[1].dc_inst/s_state[3]_i_1__0_n_0                        | rx0/rx0/not_bs_finished_dom_ch                                |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[3].dc_inst/s_state[3]_i_1__7_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              4 |
+|  rx0/rx0/rxclk_d4  |                                                                       | rx0/loop1.loop0[1].rxn/gb0/write_addr[3]_i_1__0_n_0           |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[2].dc_inst/m_delay_val_int[4]_i_1__1_n_0                |                                                               |                3 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[3].dc_inst/s_state[3]_i_1__2_n_0                        | rx0/rx0/not_bs_finished_dom_ch                                |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[2].dc_inst/s_state[3]_i_1__1_n_0                        | rx0/rx0/not_bs_finished_dom_ch                                |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[3].dc_inst/m_delay_val_int[4]_i_1__2_n_0                |                                                               |                2 |              4 |
+|  rx0/rx0/pixel_clk | rx0/rx0/gb0/E[0]                                                      |                                                               |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[0].dc_inst/s_state[3]_i_1__4_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              4 |
+|  rx0/rx0/pixel_clk | rx0/rx0/bcount                                                        | rx0/rx0/bcount[3]_i_1__0_n_0                                  |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[4].dc_inst/s_state[3]_i_1__8_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[1].dc_inst/s_state[3]_i_1__5_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              4 |
+|  rx0/rx0/pixel_clk | rx0/loop1.loop0[1].rxn/bcount                                         | rx0/loop1.loop0[1].rxn/bcount[3]_i_1_n_0                      |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/c_delay_in[3]_i_1__0_n_0                       |                                                               |                2 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[4].dc_inst/m_delay_val_int[4]_i_1__3_n_0                |                                                               |                3 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[4].dc_inst/s_state[3]_i_1__3_n_0                        | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/FSM_onehot_state2[4]_i_1_n_0                                  | rx0/rx0/not_rx_mmcm_lckd_intd4                                |                1 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[0].dc_inst/m_delay_val_int[4]_i_1_n_0                   |                                                               |                2 |              4 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[0].dc_inst/m_delay_val_int[4]_i_1__4_n_0 |                                                               |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[0].dc_inst/s_delay_val_int[4]_i_1_n_0                   | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[1].dc_inst/s_delay_val_int[4]_i_1__0_n_0                | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[2].dc_inst/s_delay_val_int[4]_i_1__6_n_0 | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[3].dc_inst/m_delay_val_int[4]_i_1__7_n_0 |                                                               |                3 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[2].dc_inst/s_delay_val_int[4]_i_1__1_n_0                | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[0].dc_inst/s_delay_val_int[4]_i_1__4_n_0 | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[3].dc_inst/s_delay_val_int[4]_i_1__7_n_0 | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[3].dc_inst/s_delay_val_int[4]_i_1__2_n_0                | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[1].dc_inst/m_delay_val_int[4]_i_1__5_n_0 |                                                               |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[1].dc_inst/s_delay_val_int[4]_i_1__5_n_0 | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[4].dc_inst/m_delay_val_int[4]_i_1__8_n_0 |                                                               |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[4].dc_inst/s_delay_val_int[4]_i_1__8_n_0 | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[2].dc_inst/m_delay_val_int[4]_i_1__6_n_0 |                                                               |                3 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[4].dc_inst/s_delay_val_int[4]_i_1__3_n_0                | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              5 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[2].dc_inst/pdcount[5]_i_2__1_n_0                        | rx0/rx0/loop3[2].dc_inst/pdcount[5]_i_1__1_n_0                |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/sel                                                           | rx0/rx0/not_rx_mmcm_lckd_intd4                                |                1 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[0].dc_inst/pdcount[5]_i_2__4_n_0         | rx0/loop1.loop0[1].rxn/loop3[0].dc_inst/pdcount[5]_i_1__4_n_0 |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[2].dc_inst/pdcount[5]_i_2__6_n_0         | rx0/loop1.loop0[1].rxn/loop3[2].dc_inst/pdcount[5]_i_1__6_n_0 |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[3].dc_inst/pdcount[5]_i_2__7_n_0         | rx0/loop1.loop0[1].rxn/loop3[3].dc_inst/pdcount[5]_i_1__7_n_0 |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[4].dc_inst/pdcount[5]_i_2__8_n_0         | rx0/loop1.loop0[1].rxn/loop3[4].dc_inst/pdcount[5]_i_1__8_n_0 |                3 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[1].dc_inst/pdcount[5]_i_2__0_n_0                        | rx0/rx0/loop3[1].dc_inst/pdcount[5]_i_1__0_n_0                |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/c_delay_in_target[4]_i_1_n_0                                  |                                                               |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[3].dc_inst/pdcount[5]_i_2__2_n_0                        | rx0/rx0/loop3[3].dc_inst/pdcount[5]_i_1__2_n_0                |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[1].dc_inst/pdcount[5]_i_2__5_n_0         | rx0/loop1.loop0[1].rxn/loop3[1].dc_inst/pdcount[5]_i_1__5_n_0 |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/sel                                            | rx0/loop1.loop0[1].rxn/RST                                    |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[0].dc_inst/pdcount[5]_i_2_n_0                           | rx0/rx0/loop3[0].dc_inst/pdcount[5]_i_1_n_0                   |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[4].dc_inst/pdcount[5]_i_2__3_n_0                        | rx0/rx0/loop3[4].dc_inst/pdcount[5]_i_1__3_n_0                |                2 |              6 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[3].dc_inst/pd_hold[7]_i_1__2_n_0                        | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              8 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[0].dc_inst/pd_hold[7]_i_1__4_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              8 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[1].dc_inst/pd_hold[7]_i_1__5_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              8 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[2].dc_inst/pd_hold[7]_i_1__1_n_0                        | rx0/rx0/not_bs_finished_dom_ch                                |                1 |              8 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[2].dc_inst/pd_hold[7]_i_1__6_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              8 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[4].dc_inst/pd_hold[7]_i_1__3_n_0                        | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              8 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[3].dc_inst/pd_hold[7]_i_1__7_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              8 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[1].dc_inst/pd_hold[7]_i_1__0_n_0                        | rx0/rx0/not_bs_finished_dom_ch                                |                3 |              8 |
+|  rx0/rx0/pixel_clk |                                                                       | rx0/rx0/bsstate[1]_i_1_n_0                                    |                3 |              8 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[4].dc_inst/pd_hold[7]_i_1__8_n_0         | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |                2 |              8 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[0].dc_inst/pd_hold[7]_i_1_n_0                           | rx0/rx0/not_bs_finished_dom_ch                                |                2 |              8 |
+|  rx0/rx0/pixel_clk |                                                                       | rx0/loop1.loop0[1].rxn/bsstate[1]_i_1__0_n_0                  |                3 |              9 |
+|  rx0/rx0/rxclk_d4  |                                                                       | rx0/rx0/not_rx_mmcm_lckd_intd4                                |                3 |             10 |
+|  rx0/rx0/rxclk_d4  |                                                                       | rx0/loop1.loop0[1].rxn/RST                                    |                5 |             10 |
+|  rx0/rx0/pixel_clk |                                                                       | rx0/rx0/gb0/reset_out[1]                                      |                4 |             24 |
+|  rx0/rx0/rxclk_d4  |                                                                       | rx0/loop1.loop0[1].rxn/not_bs_finished_dom_ch                 |               17 |             40 |
+|  rx0/rx0/rxclk_d4  |                                                                       | rx0/rx0/not_bs_finished_dom_ch                                |               16 |             40 |
+|  rx0/rx0/rxclk_d4  | rx0/loop1.loop0[1].rxn/loop3[2].dc_inst/p_4_in                        |                                                               |               19 |             60 |
+|  rx0/rx0/rxclk_d4  | rx0/rx0/loop3[2].dc_inst/p_4_in                                       |                                                               |               21 |             60 |
+|  rx0/rx0/pixel_clk |                                                                       |                                                               |               43 |            187 |
+|  rx0/rx0/rxclk_d4  |                                                                       |                                                               |               89 |            449 |
++--------------------+-----------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 4      |                    22 |
+| 5      |                    15 |
+| 6      |                    13 |
+| 8      |                    11 |
+| 9      |                     1 |
+| 10     |                     2 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+

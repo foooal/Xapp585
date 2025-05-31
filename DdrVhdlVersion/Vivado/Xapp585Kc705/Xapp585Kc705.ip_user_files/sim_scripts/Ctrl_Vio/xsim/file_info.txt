@@ -1,0 +1,2 @@
+Ctrl_Vio.vhd,vhdl,xil_defaultlib,../../../../../../Libraries/Vio_Lib/Ctrl_Vio/sim/Ctrl_Vio.vhd,incdir="../../../../../../Libraries/Vio_Lib/Ctrl_Vio/hdl/verilog"incdir="../../../../../../Libraries/Vio_Lib/Ctrl_Vio/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v
